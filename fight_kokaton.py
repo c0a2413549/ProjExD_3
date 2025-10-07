@@ -140,6 +140,7 @@ class Bomb:
         self.rct.move_ip(self.vx, self.vy)
         screen.blit(self.img, self.rct)
 
+
 class Score:
     """
     スコアに関するクラス
@@ -160,6 +161,7 @@ class Score:
         """
         self.img = self.fonto.render(f"SCORE:{self.scr}",0, (0, 0, 255))
         screen.blit(self.img, self.rct)
+        
 
 def main():
     pg.display.set_caption("たたかえ！こうかとん")
